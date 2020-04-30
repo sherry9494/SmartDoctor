@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f3f3f3"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            style="@style/Widget.MaterialComponents.CardView"
+            app:cardElevation="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/logo"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/doctor"
+                android:contentDescription="TODO"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_scrim"/>
+
+            <TextView
+                android:id="@+id/home_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome Sherry"
+                android:fontFamily="@font/raleway_bold"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+        </FrameLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            style="@style/Widget.MaterialComponents.CardView"
+            app:cardElevation="5dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/dark_purple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BPM"
+                    android:fontFamily="@font/raleway_eemibold"
+                    android:textColor="@color/dark_purple"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:lottie_fileName="heart.json"
+                    app:lottie_loop="true"
+                    app:lottie_speed="0.5"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#d5d5d5"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"/>
+
+
+                <TextView
+                    android:id="@+id/home_BPM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Result"
+                    android:fontFamily="@font/raleway_regular"
+                    android:textColor="@color/dark_purple"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/dark_purple"
+            style="@style/Widget.MaterialComponents.CardView"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prediction"
+                    android:fontFamily="@font/raleway_eemibold"
+                    android:textColor="@color/dark_purple"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    app:lottie_fileName="cardio.json"
+                    app:lottie_loop="true"
+                    app:lottie_speed="0.5"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#d5d5d5"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"/>
+
+                <TextView
+                    android:id="@+id/home_prediction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Result"
+                    android:fontFamily="@font/raleway_regular"
+                    android:textColor="@color/dark_purple"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+</ScrollView>
